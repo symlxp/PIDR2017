@@ -12,4 +12,6 @@ chmod 775 ./scripts/get-pin.sh
 chmod 775 ./scripts/get-android-sdk.sh
 chmod 775 ./busybox/busybox
 chmod 775 ./busybox/busybox_TAR
+chmod 775 ./adb
+chmod 775 install-pin-ls.sh
 

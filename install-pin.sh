@@ -17,9 +17,7 @@
 
 # on extrait
 ./adb shell "cd /data/tools/pintool ; ls -al ; ./busybox tar xzvf android-install.tar.gz ; rm android-install.tar.gz"
-./adb shell "cd /data/tools/pintool ; ./pin -t /data/tools/pintool/inscount2.so -- ls"
-./adb pull ./data/tools/pintool/inscount.out
 echo "--------------------------------------"
-echo "Fin du script"
+echo "Installation du pintool effectuée"
 
 
