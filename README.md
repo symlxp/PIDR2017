@@ -1,7 +1,7 @@
 # PIDR2017
 
 ## ETAPE 1 - Téléchargement des fichiers nécessaires
-git clone https://github.com/tristanvdb/pin-android.git
+git clone https://github.com/i3yaki/PIDR2017.git
 cd PIDR2017
 
 ## ETAPE 2 - Installation d'un émulateur android
