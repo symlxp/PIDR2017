@@ -26,7 +26,6 @@ echo >> $ANDROID_PIN_PATH/scripts/android-pin.rc
 
 source $ANDROID_PIN_PATH/scripts/android-pin.rc
 
-$ANDROID_PIN_PATH/scripts/get-busybox.sh
 $ANDROID_PIN_PATH/scripts/get-pin.sh
 $ANDROID_PIN_PATH/scripts/get-android-sdk.sh
 
