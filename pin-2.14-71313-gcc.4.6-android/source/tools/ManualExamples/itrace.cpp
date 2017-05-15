@@ -30,6 +30,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 END_LEGAL */
 #include <stdio.h>
 #include "pin.H"
+#include <iostream>
 
 FILE * trace;
 
@@ -41,14 +42,16 @@ VOID printip(VOID *ip) { fprintf(trace, "%p\n", ip); }
 VOID Instruction(INS ins, VOID *v)
 {
     // Insert a call to printip before every instruction, and pass it the IP
-    INS_InsertCall(ins, IPOINT_BEFORE, (AFUNPTR)printip, IARG_INST_PTR, IARG_END);
+    //INS_InsertCall(ins, IPOINT_BEFORE, (AFUNPTR)printip, IARG_INST_PTR, IARG_END);
+	std::cout << INS_Disassemble(ins) << "\n";
 }
 
 // This function is called when the application exits
 VOID Fini(INT32 code, VOID *v)
 {
-    fprintf(trace, "#eof\n");
-    fclose(trace);
+	std::cout << "done" << "\n";
+    //fprintf(trace, "#eof\n");
+   // fclose(trace);
 }
 
 /* ===================================================================== */
@@ -68,7 +71,7 @@ INT32 Usage()
 
 int main(int argc, char * argv[])
 {
-    trace = fopen("itrace.out", "w");
+    //trace = fopen("itrace.out", "w");
     
     // Initialize pin
     if (PIN_Init(argc, argv)) return Usage();
