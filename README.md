@@ -47,6 +47,6 @@ This tutorial works for:
 ### Compil and Install Pintool on device
  - run:
  
-    ./push-tool.sh
+		./push-tool.sh
     
-    ( if you can't use the script :  sudo chmod 777 push-tool.sh ) 
+		( if you can't use the script :  sudo chmod 777 push-tool.sh ) 
