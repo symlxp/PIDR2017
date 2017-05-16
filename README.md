@@ -2,8 +2,8 @@
 
 ### WARNINGS
 
-If you clone the git as it is now, you don't have to install pin and the compiling tools
-Just go to the "Compil and Install Pintool on device" part then
+ - If you clone the git as it is now, you don't have to install pin and the compiling tools.
+ - Just go to the "Compil and Install Pintool on device" part then
 
 ### INFOS
 
@@ -27,9 +27,9 @@ This tutorial works for:
 
  - then just run:
 
-		./instal.sh
+		./scripts/install.sh
 
-		( if you can't use the script :  sudo chmod 777 instal.sh )
+		( if you can't use the script :  sudo chmod 777 scripts/install.sh )
 
 
 ### Install Compiling tools
@@ -39,14 +39,21 @@ This tutorial works for:
 
  - then run:
 
-		./set-ndk.sh
+		./scripts/set-ndk.sh
 
-		( if you can't use the script :  sudo chmod 777 set-ndk.sh )
+		( if you can't use the script :  sudo chmod 777 scripts/set-ndk.sh )
 
 
 ### Compil and Install Pintool on device
  - run:
  
-		./push-tool.sh
+		./scripts/push-tool.sh <name-of-the-Tool-without-".so">
     
-		( if you can't use the script :  sudo chmod 777 push-tool.sh ) 
+		( if you can't use the script :  sudo chmod 777 scripts/push-tool.sh )
+
+### Use pin on an ".apk" from Scratch
+ - run:
+
+		./scripts/pin-on-apk.sh <name-of-the-apk>
+    
+		( if you can't use the script :  sudo chmod 777 scripts/push-tool.sh )
